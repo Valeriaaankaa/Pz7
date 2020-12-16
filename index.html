@@ -1,0 +1,671 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Travel agency</title>
+   <link href="animate.css" rel="stylesheet" type="text/css"/>
+    <script async src="js/wow.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script async src="js/lazyload.js"></script>
+<script href = "js/head.load.js"></script>
+<script>
+	head.load(['animate.css'])
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+<style type="text/css">
+ html{
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+   cursor: url(images/cursor.png), auto;
+ }
+ </style>
+  </head>
+  <body>
+    <div class="image">
+    <a name="main">
+      <picture>
+      <source media="(min-width:1350px)" srcset="images/Glavnaya/Glavnaya_1600.jpg" >
+      <source media="(min-width:1150px)" srcset="images/Glavnaya/Glavnaya_1350.jpg" >
+      <source media="(min-width:850px)" srcset="images/Glavnaya/Glavnaya_1150.jpg" >
+      <source media="(min-width:550px)" srcset="images/Glavnaya/Glavnaya_850.jpg" >
+      <img src="images/Glavnaya/Glavnaya_550.jpg" style="transition: 0.5s;">
+    </picture></a>
+    <nav>
+      <ul class="marklist">
+        <li><a href="#main">Главная</a></li>
+        <li><a href="#we">Про нас</a></li>
+        <li><a href="#popular">Популярные направления</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h1 class="zagolovok wow slideInLeft"><a name="we">Информация об агенстве</a></h1>
+      <div class="text" align="justify">
+          <p class="wow fadeInRight">Практически всем туристическим агенствам свойственно нахваливать себя,
+          но говорят скромность украшает. Мы старомодно верим в это, поэтому расскажем
+          о себе только правду. Туристическая фирма "Захватывающий мир"
+          - это молодость, профессионализм, надежность и чесность. Мы верим, что клиент
+          должен отдыхать не только во время своего путешествия, но и в процессе выбора
+          и решения всех сопутствующих вопросов, касающихся долгожданного отдыха. Поэтому
+          своим туристам мы гарантируем индивидуальный подход и качественное обслуживание
+          на всех этапах нашей работы.</p>
+          <p class="wow fadeInRight"><strong>
+          Наше туристическое агенство предлагает своим клиентам полный спектр туристических услуг:
+          </strong></p>
+          <ol class="list1 wow fadeInRight">
+            <li> Авиатуры в любую точку Земли - будь то экскурсионные туры, отдых в
+            экзотических странах и на "райских" островах, или же привычные и
+            полюбившиеся нашим туристам Турция, Египет, Болгария или ОАЭ;</li>
+            <li> Автобусные туры:
+            <ul class="list2"><li>Туры по Украине, в которых Вы можете открыть для себя новые, до
+            этого неизведанные, странички родной страны;</li>
+            <li>Туры по Европе, где все вокруг наполнено неповторимой историей и
+            шедевральной архитектурой;</li>
+            </ul></li>
+            <li>Горнолыжные автобусные и авиатуры - зимний отдых в Карпатах, горнолыжные
+            курорты сказочной Польши (Закопане), гостеприимной Болгарии (Банско, Пампорово),
+            удивительных Австрийских Альп (Зальцбургская земля, Тироль, Каринтия),
+            Французких Альп (Куршавель, Валь Торанс, Шамони) и других стран;</li>
+            <li>Организация индивидуальных туров;</li>
+            <li>Бронирование отелей по всему миру;</li>
+            <li>Бронирование авиабилетов в любом направлении;</li>
+            <li>Туристическое страхование;</li>
+            <li>Продажа и пополнение туристических сим-карт
+            <a href="https://travelsim.ua/" class="othersites" target="_blank">"Travel Sim"</a>.</li>
+          </ol>
+          <p class="wow fadeInRight">Мы предоставляем нашим туристам только актуальную информацию. Ведь покупая
+          туристическую услугу клиент не может оценить её наглядно, "попробовать"
+          или "примерить", как это бывает в случае покупки товаров, поэтому представление
+          реальной, актуальной инормации о туре или туристической услуге играет
+          важнейшую роль.</p>
+          <h1 class="zagolovok wow slideInLeft">Наши сотрудники</h1>
+          <img id="myImg" src="images/office_work.webp" alt="Наши сотрудники" style="width:100%; max-width:500px;" class="wow fadeInRight">
+          <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+          </div>
+          <p class="wow fadeInRight">В туризме, как и в любой другой отрасли, важно идти в ногу со временем,
+          быстро реагировать на любые изменения и принимать решения. Наша туристическое
+          агенство всегда держит "руку на пульсе", поэтому мы всегда в курсе всех самых
+          горящих предложений. Горящие туры исчезают так же внезапно, как и появляются.
+          Нужно лишь заранее сообщить нам о своем желании "поймать" горящий тур,
+          определиться с периодом отдыха и запастись терпением.</p>
+          <p class="wow fadeInRight">Тем временем мы проверяем, какие тревел-тренды прошлого года оказались
+            верными, заглядываем в будущее и делаем ставки на то, какими будут поездки в следующем году.
+          <strong>Основные тревел-тренды 2020 года:</strong></p>
+          <div class="accordion wow fadeInRight">
+	<div class="accordion-header">Экотуризм</div>
+	<div>
+		<p>Грета Тунберг приложила много усилий, чтобы люди наконец-то задумались о природе и о следе,
+        который мы оставляем, поэтому грядет период осознанных путешествий! А выражается это в том,
+        что теперь путешественники считают каждый свой полет и оставляемый им углеродный след.
+        Поэтому все больше людей выбирают наземный транспорт, так как он загрязняют природу меньше.
+        Между прочим, даже появился термин «флайтшейминг» – стыд за перелет.</p>
+	</div>
+	<div class="accordion-header">Виртуальная реальность</div>
+	<div>
+		<p>Технологии бегут быстрее, чем мы можем себе представить: уже сегодня можно забронировать отель,
+      предварительно изучив номер с помощью VR. Как можно догадаться, такая опция уже начинает быть
+      доступной и для других услуг: с помощью виртуальной реальности можно выбрать машину в аренду,
+      изучить в деталях пляж, на котором хочешь проводить время в свой отпуск, даже можешь посмотреть,
+      каких животных увидишь в сафари-туре. Пока неизвестно, как скоро это станет доступным простым пользователям,
+      но уверены, что всех моушен-дизайнеров ждет много работы.</p>
+	</div>
+	<div class="accordion-header">Удаленная работа</div>
+	<div>
+		<p>Зачем оставаться на одном месте, если ваша работа позволяет путешествовать по миру?
+        Осталось договориться с работодателем, какой часовой пояс будет приемлемым для
+        продуктивного общения, и вот ты уже летишь в Амстердам на месяц.
+        Так как все меньше людей берут отпуск в том виде, который предполагает закон
+        (уехать на две или три полных недели отдыха – вау!), и люди выбирают короткие вылазки
+        без отрыва от производства, а смена локации все так же необходима, удаленная работа
+        как вид путешествий будет становиться все более популярной.</p>
+	</div>
+</div>
+<script async>
+$('.accordion').accordion({
+	heightStyle: 'content',
+	header: '.accordion-header'
+});
+</script>
+          <p class="wow fadeInRight"><strong>Мы смело можем назвать своих клиентов друзьями.</strong>
+          Друзьям доверяют, с ними делятся тайнами, на них можно положиться.
+          Настоящих друзей немного, но мы верим, что сможем в Ваших глазах заслужить
+          этогогордое звание. Своих клиентов мы ценим и прилагаем все усилия, чтобы
+          наше сотрудничество для них было максимально комфортным. Становясь нашими
+          постоянными клиентами, Вы обретаете в нашем лице не только надежного гида в
+          мире туризма, но и просто настоящего друга.</p>
+<p class="wow fadeInRight"><strong>Тур</strong> — организованная поездка в одну или несколько стран
+  с возвращением в исходный пункт назначения.
+  Современный рынок туристских услуг предлагает большое количество туров и туристских маршрутов.
+  Все они имеют характерные отличительные особенности и адресованы различным группам потребителей.</p>
+  <div id="carousel" class="wow bounceInDown">
+<a href="#">
+  <picture>
+   <source media="(min-width:1150px)" srcset="images/Carusel1/Carusel1_320.jpg" >
+    <img src="images/Carusel1/Carusel1_247.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+  </picture></a>
+<a href="#">
+  <picture>
+    <source media="(min-width:1150px)" srcset="images/Carusel2/Carusel2_320.jpg" >
+    <img src="images/Carusel2/Carusel2_247.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+  </picture></a>
+<a href="#">
+  <picture>
+    <source media="(min-width:1150px)" srcset="images/Carusel3/Carusel3_320.jpg" >
+    <img src="images/Carusel3/Carusel3_247.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+  </picture>
+  </a>
+<a href="#">
+  <picture>
+    <source media="(min-width:1150px)" srcset="images/Carusel4/Carusel4_320.jpg" >
+    <img src="images/Carusel4/Carusel4_247.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+  </picture>
+</a>
+<a href="#">
+  <picture>
+    <source media="(min-width:1150px)" srcset="images/Carusel5/Carusel5_320.jpg" >
+    <img src="images/Carusel5/Carusel5_247.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+  </picture></a>
+<a href="#"><source media="(min-width:1150px)" srcset="images/Carusel6/Carusel6_320.jpg" >
+  <img src="images/Carusel6/Carusel6_247.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+</picture></a>
+<a href="#">
+  <picture>
+    <source media="(min-width:1150px)" srcset="images/Carusel7/Carusel7_320.jpg" >
+    <img src="images/Carusel7/Carusel7_247.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+  </picture>
+</a>
+</div>
+
+  <p class="wow fadeInRight">Тур является основным результатом деятельности туристских компаний, выступающих
+     на рынке в роли туроператоров или турагентств.
+     Разработкой и формированием туров занимаются туроператоры.
+     Реализацию туров могут осуществлять как туроператоры, так и туристские агентства.
+     Любой тур, как правило, включает комплекс различных туристских услуг, предоставляемых туристу.
+    <strong> В число таких услуг входят:</strong>
+<ul class="wow fadeInRight">
+  <li>«Oбеспечение транспортного обслуживания» — бронирование и покупка авиа, ж/д и других билетов,
+    а также организация трансфера, позволяющего добраться до места назначения или передвигаться по маршруту путешествия;</li>
+  <li>«Oрганизация проживания туриста» — бронирование отелей (часто с нестандартными видами питания по типу «Все включено»),
+    хостелов, гостевых домов, кемпингов или предоставление аренды жилого помещения, такого как апартамент, вилла, и прочее;</li>
+  <li>«Экскурсионное обслуживание» — отдельные туры могут включать различные экскурсии, услуги гидов, входные билеты в музеи,
+     театры, на шоу, концерты и прочие мероприятия.</li>
+   </ul>
+   <p class="wow fadeInRight">Существует множество видов туров, каждый из которых опирается на какой-то
+     один определённый классификационный признак (продолжительность тура, вид транспорта, тип проживания и т. п.).
+    <strong> В зависимости от содержания программы туры подразделяются на следующие виды:</strong></p>
+</div>
+          <div class="otstyp5 wow fadeInRight">
+              <button class="tablink" onclick="openPage('Home', this, '#7fff00')" id="defaultOpen">Личный</button>
+              <button class="tablink" onclick="openPage('News', this, '#7fff00')">Пляжный</button>
+              <button class="tablink" onclick="openPage('Contact', this, '#7fff00')">Cпорт-тур</button>
+              <button class="tablink" onclick="openPage('About', this, '#7fff00')">Шоп-тур</button>
+
+              <div id="Home" class="tabcontent">
+                    <h3>Личные туры</h3>
+                <p>Личные тур — это тур, услуги в котором клиент (или группа клиентов) выбирает в соответствии
+                  с личными пожеланиями. Программа пребывания не является шаблонной и создается индивидуально для
+                  каждого клиента.  Индивидуальные туры всегда дороже, чем туры,
+                  рассчитанные на большую группу туристов, и приоритетом здесь является особый подход к клиенту и уровень
+                  обслуживания на более высоком уровне. </p>
+              </div>
+
+              <div id="News" class="tabcontent">
+                <h3>Пляжные туры</h3>
+                <p>Пляжные туры, наверное, самый популярный вид отдыха. Ласковое море и отличный сервис — что еще нужно
+                   для идеального времяпровождения?! Пляжные туры позволят Вам провести отпуск на берегу моря вне зависимости
+                   от времени года. Египет, Турция, Таиланд щедро одаривают туристов солнцем, на Бали множество дайвинг-клубов...
+                   Вечерами для Вас раскроют двери клубы и рестораны. Также можно посетить необременительные экскурсии по древним
+                   и экзотическим местам.</p>
+              </div>
+
+              <div id="Contact" class="tabcontent">
+                <h3>Cпортивные туры</h3>
+                <p>Чаще всего непродолжительны, могут занимать уик-энд (если, например, это футбол) и организуются в связи
+                  с крупными спортивными событиями, будь то Олимпиада или чемпионат по футболу. О приобретении подобного тура
+                  стоит позаботиться заранее, это завиит от популярности мероприятия или команды.
+                  В стоимость спортивного тура обычно включены билеты на мероприятия, виза, авиаперелет, проживание в отеле.</p>
+              </div>
+
+              <div id="About" class="tabcontent">
+                <h3>Шоп-туры</h3>
+                <p>Шоп-туры по сути своей уникальны, т.к. дают возможность совместить приятный отдых и покупки
+                  по не менее привлекательным ценам. В основном шоп-туры устраиваются в те страны, в которых широта
+                  выбора качественной и сравнительно недорогой одежды соответствует либеральности таможенных правил.
+                  Чтобы отдых максимально соответствовал Вашим ожиданиям, мы поможем Вам подобрать
+                  оптимальную программу шопинга, а также гостиницы и рестораны.</p>
+              </div>
+              </div>
+
+    <h1 class="zagolovok wow slideInLeft">Почему нас выбирают?</h1>
+    <div class="text1234">
+  <table class="benefits">
+<tr>
+  <th>
+    <picture>
+      <source media="(min-width:1350px)" srcset="images/Convenience/Convenience_170.jpg" >
+      <source media="(min-width:1150px)" srcset="images/Convenience/Convenience_153.jpg" >
+      <source media="(min-width:850px)" srcset="images/Convenience/Convenience_129.jpg" >
+      <img src="images/Convenience/Convenience_106.jpg" style="transition: 0.5s;" loading="lazy" class="wow bounceInDown">
+    </picture></th>
+  <th>
+    <picture>
+      <source media="(min-width:1350px)" srcset="images/Savemoney/Savemoney_170.jpg" >
+      <source media="(min-width:1150px)" srcset="images/Savemoney/Savemoney_153.jpg" >
+      <source media="(min-width:850px)" srcset="images/Savemoney/Savemoney_129.jpg" >
+      <img src="images/Savemoney/Savemoney_106.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+    </picture>
+  <th>
+    <picture>
+      <source media="(min-width:1350px)" srcset="images/Personalattention/Personalattention_170.jpg" >
+      <source media="(min-width:1150px)" srcset="images/Personalattention/Personalattention_153.jpg" >
+      <source media="(min-width:850px)" srcset="images/Personalattention/Personalattention_129.jpg" >
+      <img src="images/Personalattention/Personalattention_106.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+    </picture></th>
+  <th>
+    <picture>
+      <source media="(min-width:1350px)" srcset="images/Expertadvise/Expertadvise_170.jpg" >
+      <source media="(min-width:1150px)" srcset="images/Expertadvise/Expertadvise_153.jpg" >
+      <source media="(min-width:850px)" srcset="images/Expertadvise/Expertadvise_129.jpg" >
+      <img src="images/Expertadvise/Expertadvise_106.jpg" style="transition: 0.5s;" class="wow bounceInDown">
+    </picture>
+  </th>
+</tr>
+<tr>
+<td class="text1 wow bounceInLeft">
+  <strong>Удобно</strong>
+  <p>
+    Вместо того, чтобы просматривать многочисленные веб-сайты, путеводители
+    или сообщения друзей в социальных сетях, Вы заслуживаете беззаботного отпуска,
+    запланированного профессионалом, что сэкономит ваше драгоценное время.
+  </p></td>
+<td class="text1 wow bounceInDown">
+  <strong>Экономия денег</strong>
+  <p>
+    Консультанты по путешествиям имеют эксклюзивный доступ к специальным тарифам
+    и скидкам, которые гарантируют, что Вы получите максимальную выгоду.
+  </p></td>
+<td class="text1 wow bounceInDown">
+  <strong>Личное внимание</strong>
+  <p>
+    Наши работники гордятся тем, что помогают сделать вашу поездку
+    уникальной. Используя сайты онлайн-бронирования, Вы никогда не знаете, к кому
+    обратиться или где получить рекомендации. От планирования до возвращения - Вам
+    нужен кто-то рядом, на расстоянии телефонного звонка или электронного письма.
+  </p></td>
+<td class="text1 wow bounceInRight">
+  <strong>Советы экспертов</strong>
+  <p>
+    Консультанты по путешествиям - это образованные путешественники, знающие мир,
+    они проведут туда, куда Вы хотите. Так что воспользуйтесь их опытом, чтобы создать
+    отпуск своей мечты. Отправляйтесь в места, которые не знает Гугл!
+  </p></th>
+</tr>
+</table>
+</div>
+    <h1  class="zagolovok wow slideInLeft" ><a name="popular">Популярные направления</a></h1>
+  <div class="text123">
+    <table>
+      <tr>
+        <td>
+          <picture>
+            <source media="(min-width:1350px)" srcset="images/Bytan/Bytan_400.jpg" >
+            <source media="(min-width:1150px)" srcset="images/Bytan/Bytan_370.jpg" >
+            <source media="(min-width:850px)" srcset="images/Bytan/Bytan_320.jpg" >
+            <source media="(min-width:550px)" srcset="images/Bytan/Bytan_260.jpg" >
+            <img src="images/Bytan/Bytan_200.jpg" style="transition: 0.5s;" class="countries wow bounceInLeft">
+          </picture></td>
+        <td class="textcountry wow bounceInRight" valign="top"><h3>1. Бутан</h3>
+        <p>Крошечный кусочек гималайского рая претендует на место нахождения Шангрилы
+        и придерживается политики туризма высокой ценности и низкого влияния на
+        окружающую среду. Это значит, что путешественникам придется немало заплатить,
+        чтобы прогуляться по горным монастырям среди сосен. Зато – мало людей и никакого
+        мусора на тропах. А еще Бутан – единственная страна, полностью компенсирующая
+        свои выбросы углекислого газа и использующая только органическое сельское хозяйство.</p>
+        <img src="images/send.png" width="20" height="20" alt="Send"/>
+        <a href="#contact" class="send">Едем в Бутан</a></td>
+      </tr>
+      <tr>
+        <td>
+          <picture>
+            <source media="(min-width:1350px)" srcset="images/Britain/Britain_400.jpg" >
+            <source media="(min-width:1150px)" srcset="images/Britain/Britain_370.jpg" >
+            <source media="(min-width:850px)" srcset="images/Britain/Britain_320.jpg" >
+            <source media="(min-width:550px)" srcset="images/Britain/Britain_260.jpg" >
+            <img src="images/Britain/Britain_200.jpg" style="transition: 0.5s;" class="countries wow bounceInLeft">
+          </picture></td>
+        <td class="textcountry wow bounceInRight" valign="top"><h3>2. Великобритания</h3>
+        <p>Хорошим вариантом будет сосредоточиться на Англии – а именно, на ее побережье, где можно
+        гулять на пирсах, обедать рыбой, наблюдать за подводной жизнью или искать
+        окаменелости в древних утесах, строить замки из песка или попробовать разглядеть
+        дельфинов в море. К тому же, в 2021-м открываются новые участки пешеходной
+        тропы вдоль побережья – England Coast Path. После своего завершения она станет
+        самой протяженной тропой такого типа в мире, занимая 3000 миль.</p>
+        <img src="images/send.png" width="20" height="20" alt="Send"/>
+        <a href="#contact" class="send">Едем в Англию</a></td>
+      </tr>
+      <tr>
+        <td>
+          <picture>
+          <source media="(min-width:1350px)" srcset="images/Kostarika/Kostarika_400.jpg" >
+          <source media="(min-width:1150px)" srcset="images/Kostarika/Kostarika_370.jpg" >
+          <source media="(min-width:850px)" srcset="images/Kostarika/Kostarika_320.jpg" >
+          <source media="(min-width:550px)" srcset="images/Kostarika/Kostarika_260.jpg" >
+          <img src="images/Kostarika/Kostarika_200.jpg" style="transition: 0.5s;" class="countries wow bounceInLeft">
+        </picture></td>
+        <td class="textcountry wow bounceInRight" valign="top"><h3>3. Коста-Рика</h3>
+          <p>Коста-Рика – еще одна страна, твердо придерживающаяся принципов устойчивого туризма.
+            Биоразнообразие здесь впечатляет: ленивцы на деревьях, лягушки в зарослях и
+            киты в океане. 90% всей энергии страна получает из возобновляемых источников
+            и, возможно, уже в 2023-м станет углеродно нейтральной. Для любителей приключений
+            тут хайкинг на вулканах, зиплайны и йога-ретриты.</p>
+            <img src="images/send.png" width="20" height="20" alt="Send"/>
+            <a href="#contact" class="send">Едем в Коста-Рику</a></td>
+      </tr>
+      <tr>
+        <td>
+          <picture>
+            <source media="(min-width:1350px)" srcset="images/Niderland/Niderland_400.jpg" >
+            <source media="(min-width:1150px)" srcset="images/Niderland/Niderland_370.jpg" >
+            <source media="(min-width:850px)" srcset="images/Niderland/Niderland_320.jpg" >
+            <source media="(min-width:550px)" srcset="images/Niderland/Niderland_260.jpg" >
+            <img src="images/Niderland/Niderland_200.jpg" style="transition: 0.5s;" class="countries wow bounceInLeft">
+          </picture>
+        </td>
+        <td class="textcountry wow bounceInRight" valign="top"><h3>4. Нидерланды</h3>
+          <p>Конечно, Амстердам всегда стоит еще одного визита, но в стране так хорошо
+            развито железнодорожное сообщение, что можно с легкостью осмотреть множество
+            других городов, а они того стоят. В апреле и мае будет много праздников –
+            День короля и День независимости, а в любое другое время можно проехать по
+            веломаршрутам – их в стране 35 000 км.</p>
+            <img src="images/send.png" width="20" height="20" alt="Send"/>
+            <a href="#contact" class="send">Едем в Нидерланды</a></td>
+      </tr>
+      <tr>
+        <td>
+          <picture>
+            <source media="(min-width:1350px)" srcset="images/Svazilend/Svazilend_400.jpg" >
+            <source media="(min-width:1150px)" srcset="images/Svazilend/Svazilend_370.jpg" >
+            <source media="(min-width:850px)" srcset="images/Svazilend/Svazilend_320.jpg" >
+            <source media="(min-width:550px)" srcset="images/Svazilend/Svazilend_260.jpg" >
+            <img src="images/Svazilend/Svazilend_200.jpg" style="transition: 0.5s;" class="countries wow bounceInLeft">
+          </picture>
+        </td>
+        <td class="textcountry wow bounceInRight" valign="top"><h3>5. Эсватини (Свазиленд)</h3>
+          <p>Маленькая страна с большим культурным и природным наследием. В нацпарках
+            можно заняться трекингом и рафтингом, увидеть носорогов и наслаждаться новыми
+            пейзажами. Страна недавно построила новый международный аэропорт, обновила
+            инфраструктуру между ним, заповедниками и столицей и теперь рассчитывает
+            на приток туристов.</p>
+            <img src="images/send.png" width="20" height="20" alt="Send"/>
+            <a href="#contact" class="send">Едем в Свазиленд </a></td>
+      </tr>
+   </table>
+  </div>
+<h1  class="zagolovok wow slideInLeft" >Нам интересно Ваше мнение</h1>
+    <form class="opros" action="index.html" method="post">
+      <ol class="list1 wow fadeInRight" id="sortable">
+        <li><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+      <div class="wow lightSpeedIn"><strong>Ваш пол</strong>
+        <div><input type="radio" name="state">Мужской</div>
+        <div><input type="radio" name="state">Женский</div>
+      </div>
+      </li>
+      <li><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+      <div  class="wow lightSpeedIn"><strong>Сколько Вам полных лет?</strong>
+        <div><input type="radio" name="age" value="18-24">18-24</div>
+        <div><input type="radio" name="age" vlaue="25-34">25-34</div>
+        <div><input type="radio" name="age" value="35-44">35-44</div>
+        <div><input type="radio" name="age" value="45-54">45-54</div>
+        <div><input type="radio" name="age" value="55-64">55-64</div>
+        <div><input type="radio" name="age" value="65 and more">65 и старше</div>
+      </div>
+      </li>
+      <li><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+      <div  class="wow lightSpeedIn"><strong>Если говорить в целом, то как часто вы путешествуете?</strong>
+      <div><input type="radio" name="kol">1 раз в 2-3 года</div>
+      <div><input type="radio" name="kol">1 раз в год</div>
+      <div><input type="radio" name="kol">2-3 раза в год</div>
+      <div><input type="radio" name="kol">Более 3 раз в год</div>
+      <div><input type="radio" name="kol">Затрудняюсь ответить</div>
+      </div>
+      </li>
+      <li><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+      <div  class="wow lightSpeedIn"><strong>Какова средняя продолжительность Вашего отдыха/путешествия?</strong>
+      <div><input type="radio" name="time">Менее 7 дней</div>
+      <div><input type="radio" name="time">7 дней</div>
+      <div><input type="radio" name="time">7-14 дней</div>
+      <div><input type="radio" name="time">14-21 день</div>
+      <div><input type="radio" name="time">более 21 дня</div>
+      </div>
+      </li>
+      <li><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+      <div  class="wow lightSpeedIn"><strong>В какой период времени Вы предпочитаете путешествовать?</strong>
+        <div><input type="checkbox" value="Зима">Зима</div>
+        <div><input type="checkbox" value="Весна">Весна</div>
+        <div><input type="checkbox" value="Лето">Лето</div>
+        <div><input type="checkbox" value="Осень">Осень</div>
+      </div>
+      </li>
+      <li><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+      <div  class="wow lightSpeedIn"><strong>Какой вид отдыха Вы предпочитаете?</strong>
+        <div><input type="checkbox" value="1">Посещение исторических мест</div>
+        <div><input type="checkbox" value="2">Посещение храмов, монастырей и других святых мест</div>
+        <div><input type="checkbox" value="3">Посещение природных заповедников и заказников</div>
+        <div><input type="checkbox" value="4">Отдых на природе (включая кемпинг)</div>
+        <div><input type="checkbox" value="5">Пляжный отдых</div>
+        <div><input type="checkbox" value="6">Экстремальный отдых</div>
+        <div><input type="checkbox" value="7">Посещение этнических и тематических праздников (Октоберфест и т.д.)</div>
+      </div>
+      </li>
+      </ol>
+      <button class="button-otpr"  id="but"><span>Отправить</span></button>
+<script defer>
+document.getElementById('but').onclick=function(){ alert("Вы ответили на все вопросы?") }
+</script>
+    </form>
+<script>
+var modal = document.getElementById('myModal');
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+    modal.style.display = "none";}
+</script>
+<h1 class="zagolovok wow slideInLeft"><a name="contact">Свяжитесь с нами</a></h1>
+<p style="text-align: center;">     
+  <div id="feedback-box" class="wow slideInRight">
+    <h2>Ваш вопрос</h2>
+    <form id="feedback-form">
+      <div class="input-bloc w1">
+        <label for="name" class="name">Имя:</label> <input id="name" name="name" size="25" type="text" />
+        <div class="error-box">
+          &nbsp;</div>
+        <!-- Контейнер для ошибок --></div>
+      <div class="input-bloc w1">
+        <label for="email" class="name">Email:</label> <input id="email" name="email" size="25" type="text" />
+        <div class="error-box">
+          &nbsp;</div>
+      </div>
+      <div class="input-bloc msg">
+        <label for="message" class="name">Сообщение:</label><textarea cols="50" id="message" name="message" rows="10"></textarea>
+        <div class="error-box">
+          &nbsp;</div>
+      </div>
+      <div>
+       <input id="send" type="submit" value="Связаться" minlength="5"/></input></div>
+    </form>
+  </div>
+  <p>
+  <script type="text/javascript" defer>
+    $(document).ready(function(){
+       $('input#name, input#email, textarea#message').unbind().blur( function(){
+           var id = $(this).attr('id');
+           var val = $(this).val();
+         switch(id){
+               case 'name':
+                  var rv_name = /^[a-zA-Zа-яА-Я]+$/; 
+                  if(val.length > 2 && val != '' && rv_name.test(val))
+                  {
+                     $(this).addClass('not_error');
+                     $(this).next('.error-box').text('Принято')
+                                               .css('color','green')
+                                               .animate({'paddingLeft':'10px'},400)
+                                               .animate({'paddingLeft':'5px'},400);
+                  }
+                  else
+                  {
+                     $(this).removeClass('not_error').addClass('error');
+                     $(this).next('.error-box').html('&bull; поле "Имя" обязательно для заполнения<br> &bull; длина имени должна составлять не менее двух символов<br> &bull; поле должно содержать только русские или латинские буквы')
+                                                .css('color','red')
+                                                .animate({'paddingLeft':'10px'},400)
+                                                .animate({'paddingLeft':'5px'},400);
+                  }
+              break;
+             case 'email':
+                 var rv_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+                 if(val != '' && rv_email.test(val))
+                 {
+                    $(this).addClass('not_error');
+                    $(this).next('.error-box').text('Принято')
+                                              .css('color','green')
+                                              .animate({'paddingLeft':'10px'},400)
+                                              .animate({'paddingLeft':'5px'},400);
+                 }
+                 else
+                 {
+                    $(this).removeClass('not_error').addClass('error');
+                    $(this).next('.error-box').html('&bull; поле "Email" обязательно для заполнения<br> &bull; поле должно содержать правильный email-адрес<br> (например: valerii.rudoi@nure.ua)')
+                                               .css('color','red')
+                                               .animate({'paddingLeft':'10px'},400)
+                                               .animate({'paddingLeft':'5px'},400);
+                 }
+             break;
+            case 'message':
+                if(val != '' && val.length < 5000)
+                {
+                   $(this).addClass('not_error');
+                   $(this).next('.error-box').text('Принято')
+                                             .css('color','green')
+                                             .animate({'paddingLeft':'10px'},400)
+                                             .animate({'paddingLeft':'5px'},400);
+                }
+                else
+                {
+                   $(this).removeClass('not_error').addClass('error');
+                   $(this).next('.error-box').html('&bull; поле "Текст письма" обязательно для заполнения')
+                                             .css('color','red')
+                                             .animate({'paddingLeft':'10px'},400)
+                                             .animate({'paddingLeft':'5px'},400);
+                }
+            break;} });
+            $('form#feedback-form').submit(function(e){
+e.preventDefault();
+if($('.not_error').length == 3)
+{  
+    $.ajax({
+           url: 'send.php',
+           type: 'post',
+           data: $(this).serialize(),
+
+           beforeSend: function(xhr, textStatus){ 
+                $('form#feedback-form :input').attr('disabled','disabled');
+           },
+
+          success: function(response){
+               $('form#feedback-form :input').removeAttr('disabled');
+               $('form#feedback-form :text, textarea').val('').removeClass().next('.error-box').text('');
+               alert(response);
+          }
+   }); 
+}
+else
+{
+ return false;
+}
+});
+});
+  </script>
+  </div>
+<div class="otstyp2"></div>
+    <div class="footer">
+      <nav>
+        <ul class="socnetwork">
+          <li><a href="https://www.instagram.com/?hl=ru" target="_blank">
+          <img src="images/instagram.webp" width="48" height="48"/></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank">
+          <img src="images/facebook.png" width="48" height="48"/></a></li>
+          <li><a href="mailto:valerii.rudoi@nure.ua" target="_blank">
+          <img src="images/gmail.png" width="48" height="48"/></a></li>
+          <li><a href="https://web.telegram.org/" target="_blank">
+          <img src="images/telegram.webp" width="48" height="48"/></a></li>
+          <li><a href="https://www.viber.com/ru/" target="_blank">
+          <img src="images/viber.webp" width="48" height="48"/></a></li>
+        </ul>
+        <p class="niz">Designed by Valera Rudoy | &copy 2020 All right reserved</p>
+      </nav>
+      </div>
+
+    <script type="text/javascript" defer>
+  wow = new WOW({
+    mobile:       false,
+    live:         true,
+    callback:     function(box) {    console.log('animation started');  }
+  });
+  wow.init();
+
+           $(document).ready(function () {
+            var carousel = $("#carousel").waterwheelCarousel({
+              flankingItems: 4,
+              movingToCenter: function ($item) {
+                $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');},
+              movedToCenter: function ($item) {
+                $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');},
+              movingFromCenter: function ($item) {
+                $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');},
+              movedFromCenter: function ($item) {
+                $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');},
+              clickedCenter: function ($item) {
+                $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');}});
+            $('#prev').bind('click', function () {
+              carousel.prev();
+              return false});
+            $('#next').bind('click', function () {
+              carousel.next();
+              return false;});
+            $('#reload').bind('click', function () {
+              newOptions = eval("(" + $('#newoptions').val() + ")");
+              carousel.reload(newOptions);
+              return false;});});
+          $( function() {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+          } );
+  </script>
+  <script defer>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";}
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";}
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;}
+    document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+  </html>

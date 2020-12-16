@@ -1,0 +1,109 @@
+@import "variables1";
+
+@mixin menunav{
+  li{
+    display: inline;
+    margin:12px;
+    font-size: 18px;
+    font-family: map-get($fonts, textbold);
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
+};
+
+@mixin menuspisok{
+ padding-left: 900px;
+ a{
+   &:hover{
+     transition: 0.5s;
+     color: #13baed;
+   }
+ }
+};
+
+@mixin country{
+ color:black;
+ font-family: map-get($fonts, textbold);
+ &:hover{
+   cursor:alias;
+   color:blue;
+   transition: 0.5s;
+ }
+};
+
+@mixin othersites{
+  color:$colorsitesbefore;
+  &:hover{
+    cursor: help;
+    transition: 0.5s;
+    color: $colorsitesafter;
+  }
+}
+@mixin buttom-otpr{
+  margin-top:15px;
+  margin-left: 10px;
+  background: transparent;
+ border-width: 0;
+ position: relative;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 18px;
+ transition: .3s;
+ span{
+    display: block;
+    position: relative;
+    z-index: 3;
+    color: white;
+    padding: 0 30px;
+    line-height: 40px;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    left: -5px;
+    top: -5px;
+    background: $otpr-button-after;
+    z-index: 1;
+    transition: .4s ease-out;
+  }
+  &:hover:before {
+    transform: translate(5px, 5px);
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    right: -5px;
+    bottom: -5px;
+    background: $otpr-button-before;
+    transition: .4s ease-out .1s;
+  }
+  &:hover:after {
+    transform: translate(-5px, -5px);
+  }
+};
+
+@mixin buttom-reg{
+  font-family: map-get($fonts, maintext);
+  color:#fff;
+  font-weight: bold;
+  font-size: 18px;
+  border:none;
+  margin-top: 15px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:50px;
+  padding-right: 50px;
+  cursor: pointer;
+  background: #0080ff;
+  &:hover{
+    background: #09ff00;
+    transition: 0.5s;
+  }
+}

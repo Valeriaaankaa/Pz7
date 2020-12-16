@@ -1,0 +1,180 @@
+@import "variables1";
+@import "mixins";
+
+.image{
+  position: relative;
+  margin:-10px;
+  nav{
+    position: absolute;
+    top:0;
+    width: 100%;
+  }
+}
+
+.marklist{
+  @include menuspisok;
+}
+
+ul.marklist{
+ @include menunav;
+}
+
+.zagolovok{
+  font-family: map-get($fonts, zagolovok);
+  font-size: $size-zagolovok;
+  text-align: center;
+}
+
+.text{
+ font-family: map-get($fonts, maintext);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.list2{
+  li{
+    list-style: none;
+    &:before{
+      content:"\27A4";
+    }
+  }
+}
+
+.othersites{
+  @include othersites;
+}
+
+.benefits{
+  margin-left: 100px;
+  margin-right: 150px;
+  width:85%;
+  table-layout: fixed;
+}
+
+.text1 {
+ font-family: map-get($fonts, maintext);
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  vertical-align: top;
+  word-wrap: normal;
+strong{
+    font-weight: bolder;
+  }
+}
+
+.countries{
+  padding-left: 250px;
+}
+.textcountry{
+    padding-left: 30px;
+    padding-right: 120px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: map-get($fonts, text-bold);
+    p{
+      padding-right: 200px;
+      font-family: map-get($fonts, maintext);
+      text-align: justify;
+    }
+    h3{
+      font-family: map-get($fonts, textbold);
+    }
+}
+
+.send{
+  @include country;
+}
+
+.opros{
+  padding-left: 30px;
+  font-family: map-get($fonts, maintext);
+}
+.button-otpr{
+  @include buttom-otpr;
+}
+
+
+.pole{
+  font-family: map-get($fonts, maintext);
+  p{
+    clear:both;
+    line-height: 25px;
+    padding-right: 50px;
+  }
+}
+.atribut{
+  @extend .pole;
+  text-align: left;
+}
+.user{
+  font-family: map-get($fonts, maintext);
+  font-size: 15px;
+  width:280px;
+  padding-left: 15px;
+  height:27px;
+  border-radius: 3px;
+}
+
+
+.label{
+  float: left;
+  padding-left: 20px;
+}
+
+.agree{
+  font-size: 14px;
+  font-family: map-get($fonts, maintext);
+}
+
+.formsvaz{
+  margin-left: 570px;
+  margin-right: 570px;
+  padding-left: 30px;
+  border-width: map-get($formasvaz, border-width);
+  border-style: map-get($formasvaz, border-style);
+  border-radius: map-get($formasvaz, border-radius);
+  border-color: map-get($formasvaz, border-color);
+}
+
+.scroll{
+  width: 300px;
+  height: 70px;
+  font-weight: 12px;
+  overflow-y: scroll;
+  font-family: map-get($fonts, maintext);
+}
+
+.button-reg{
+  @include buttom-reg;
+}
+.otstyp2{
+    margin-top: 200px;
+  }
+.socnetwork{
+padding-left: 660px;
+}
+
+ul.socnetwork{
+  li{
+    display: inline;
+  }
+}
+
+.footer{
+  position: relative;
+  margin: -30px;
+  margin-top: 90px;
+  nav{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    background-color: $footer-color;
+  }
+}
+
+.niz{
+    font-family: map-get($fonts, maintext);
+    color:white;
+    padding-left: 760px;
+}
